@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ローグエックス株式会社 | 公式サイト</title>
+  <title>お問い合わせ | ローグエックス株式会社</title>
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="icon" type="image/png" href="./images/ROGX_logo_favicon.png" />
 </head>
@@ -21,11 +21,21 @@
   </header>
 
   <main class="main">
-    <section class="hero">
-      <h1>竹害を、チカラに。</h1>
-      <p>ローグエックス株式会社は、ドローン測量・農薬散布・竹林伐採の専門企業です。</p>
-      <p>松尾研究室製MX150Hを活用した、持続可能な竹林粉砕サービスを提供しています。</p>
-      <a href="https://www.youtube.com/watch?v=QeamkqtrB7U" class="button" target="_blank">▶ シュレッターの動作動画を見る</a>
+    <section>
+      <h1>お問い合わせ</h1>
+      <p>以下のフォームにご記入のうえ、送信ボタンを押してください。</p>
+      <form action="https://formspree.io/f/mgvkjarl" method="POST">
+        <label for="name">お名前</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <label for="email">メールアドレス</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="message">お問い合わせ内容</label><br />
+        <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+
+        <button type="submit" class="button">送信</button>
+      </form>
     </section>
   </main>
 
