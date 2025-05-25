@@ -6,6 +6,23 @@
   <title>ローグエックス株式会社 | 公式サイト</title>
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="icon" type="image/png" href="./images/ROGX_logo_favicon.png" />
+  <style>
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      max-width: 70%;
+      margin: 2em auto;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
 </head>
 <body>
   <header class="header">
@@ -25,8 +42,8 @@
       <h1>竹害を、チカラに。</h1>
       <p>ローグエックス株式会社は、ドローン測量・農薬散布・竹林伐採の専門企業です。</p>
       <p>松尾研究室製MX150Hを活用した、持続可能な竹林粉砕サービスを提供しています。</p>
-      <div style="display: flex; justify-content: center; margin-top: 2em;">
-  <iframe width="70%" height="400" src="https://www.youtube.com/embed/QeamkqtrB7U" title="シュレッター動画" frameborder="0" allowfullscreen></iframe>
+      <div class="video-container">
+  <iframe src="https://www.youtube.com/embed/QeamkqtrB7U" title="シュレッター動画" frameborder="0" allowfullscreen></iframe>
 </div>
     </section>
   </main>
