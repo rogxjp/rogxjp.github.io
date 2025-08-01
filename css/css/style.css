@@ -1,0 +1,160 @@
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 50px;
+}
+
+.nav a {
+  margin-left: 1.5em;
+  text-decoration: none;
+  color: #111;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  color: #555;
+}
+
+.hero {
+  padding: 4em 2em;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  color: #111;
+  margin-bottom: 0.5em;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin: 0.5em 0;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 1.5em;
+  padding: 0.75em 1.5em;
+  background-color: #111;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.button:hover {
+  background-color: #444;
+}
+
+.footer {
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 1.5em;
+  font-size: 0.9em;
+}
+
+section {
+  margin-bottom: 3em;
+  padding: 2em;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5em;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 0.5em;
+  text-align: left;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+.contact-message {
+  height: 200px;
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .contact-message {
+    width: 80% !important;
+  }
+}
+
+/* ========== 動画部分（レスポンシブ横並び・縦並び両対応） ========== */
+
+.video-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  width: 100%;
+  max-width: 1000px; /* 必要に応じて調整 */
+  margin: 0 auto;
+}
+
+.video-wrapper .video-container {
+  flex: 1 1 45%;
+  max-width: 45%;
+  position: relative;
+  padding-bottom: 28%;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.video-wrapper .video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .video-wrapper {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .video-wrapper .video-container {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding-bottom: 56.25%; /* 小さい画面では16:9比率に */
+  }
+}
+
+.video-caption {
+  max-width: 800px;
+  margin: 1rem auto;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #333;
+  line-height: 1.4;
+}
+
+/* ========== ここまで動画部分 ========== */
+
+.video-container.dark {
+  background: #000;
+}
