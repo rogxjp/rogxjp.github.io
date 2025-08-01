@@ -123,3 +123,25 @@ th {
 .video-container.dark {
   background: #000;
 }
+
+/* 2‚Â‚Ì“®‰æ‚ð‰¡•À‚Ñ‚É•\Ž¦‚·‚é */
+.video-wrapper {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+.video-wrapper .video-container {
+  flex: 1 1 45%;
+  max-width: 45%;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.video-wrapper .video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
