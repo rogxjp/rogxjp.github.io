@@ -102,8 +102,36 @@ th {
   }
 }
 
-/* ========== 動画部分（レスポンシブ横並び・縦並び両対応） ========== */
+/* ========== 動画部分 ========== */
 
+/* --- 左寄せ16:9単独動画用 --- */
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 640px;          /* ← 追加・修正：左右最大幅を640px（お好みで調整） */
+  background: #000;
+  overflow: hidden;
+  margin: 2em 0;             /* ← 変更：中央寄せをやめて左寄せに */
+  aspect-ratio: 16 / 9;      /* ← 追加：新しめブラウザで16:9比率維持 */
+
+  /* ↓ 古いブラウザ用 */
+}
+.video-container::before {    /* ← 追加：古いブラウザ向け16:9比率維持トリック */
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* --- 横並び・縦並び2動画用ラッパーは現状維持 --- */
 .video-wrapper {
   display: flex;
   flex-wrap: wrap;
